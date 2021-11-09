@@ -12,6 +12,7 @@ for i in range(9999):
     print("成功")
     if(j>3):
       break
+j=0
 for i in range(9999):
   i=i+1000
   url = 'https://wapi.weile.com/broadcast/wel-game/v2/receive/122/818/1.3.37.153.325/520101?format=json&code='+str(i)+'&userid=108388169'
