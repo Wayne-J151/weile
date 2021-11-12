@@ -6,7 +6,7 @@ name: CI
 on:
   push:
   schedule:
-    - cron: '0 15 * * *'
+    - cron: '7 16 * * *'
 
   # Allows you to run this workflow manually from the Actions tab
 
