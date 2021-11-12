@@ -15,7 +15,8 @@ def get_bean_from_code(uid):
             print("成功")
         if(flag>1):
           break
-     return(1)
+
+
 def get_bean_from_luckyturn(uid):
     for i in range(20):
         url = 'https://wapi.weile.com/shake/turntable/draw/122/818/1.3.38.153.326/520101?format=json&userid='+str(uid)
@@ -24,11 +25,10 @@ def get_bean_from_luckyturn(uid):
         r = requests.post(url)
         if(json.loads(r.text)['msg'] == '已经达到抽奖次数'):
             break
-     return(1)
+
  
 for uid  in uids:
     
-    a = get_bean_from_code(uid)
-    b = get_bean_from_luckyturn(uid)
-    if(a+b==2):
-      print(uid,"is OK")
+    get_bean_from_code(uid)
+    get_bean_from_luckyturn(uid)
+
