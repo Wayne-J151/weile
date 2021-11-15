@@ -17,7 +17,7 @@ def get_right_code():
             right_code.append(i)
         if(flag==2):
           break
-     return right_code
+     return(right_code)
 
 def get_bean_from_code(uid,right_code):
     for code in right_code:
