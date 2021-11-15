@@ -15,7 +15,7 @@ def get_right_code():
         if(json.loads(r.text)["msg"]!="领取失败，请出入正确的兑换码"):
             flag=flag+1
             right_code.append(i)
-        if(flag=2):
+        if(flag==2):
           break
      return(right_code)
 
