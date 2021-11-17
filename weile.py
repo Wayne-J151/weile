@@ -2,6 +2,7 @@ import requests
 import json
 
 
+
 uids={"魏铮":165143389,
       "贺静晗":108388169,
       "魏铮卡2":167212742}
@@ -19,6 +20,7 @@ def get_right_code():
         if(flag==2):
           break
     return right_code
+
 
 def get_bean_from_code(uid,right_code):
     for code in right_code:
