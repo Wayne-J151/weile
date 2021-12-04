@@ -14,7 +14,7 @@ def get_right_code():
     for i in range(1000,9999):
         url = 'https://wapi.weile.com/broadcast/wel-game/v2/receive/122/818/1.3.37.153.325/520500?format=json&code='+str(i)+'&userid=165143389'
         r = requests.post(url)
-        if(json.loads(r.text)["msg"]!="领取失败，请出入正确的兑换码"):
+        if(json.loads(r.text)["msg"]!="领取失败，请输入正确的兑换码"):
             flag=flag+1
             right_code.append(i)
         else:
